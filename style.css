@@ -1,0 +1,306 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: 'Roboto', sans-serif;
+ scroll-behavior: smooth;
+}
+@import "compass/css3";
+.home{
+    min-height: 100vh;
+    background-image: url("img/01.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+ }
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header img{
+    width: 220px;
+    margin: 30px;
+    line-height: 10px;
+}
+.ul{
+    display: flex;
+    list-style: none;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 70px;
+    margin-right: 180px;
+ 
+
+}
+.ul li{
+    cursor: pointer;
+    line-height: 10px;
+    margin-left:15px;
+    margin-right:15px;
+
+
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.card{
+background-image: url("img/grilled-ribeye-beef-steak\ 1.png");
+    width: 310px;
+    height: 650px;
+    filter: brightness(75%);
+    border-radius: 5px;
+    opacity: 80%;
+
+}
+#card_2{
+    background-image: url("img/Mask\ group\ \(1\).png");
+    filter: brightness(90%);
+    opacity: 90%;
+}
+.main_card{
+    margin-top: 0px;
+    width:650px;
+    height: 750px;
+    background-image: url("img/Mask\ group\ \(2\).png");
+    border-radius: 25px;
+    border-bottom-left-radius:40px ;
+    border-bottom-right-radius:40px ;
+    transform: translateY(-50px);
+ transition: ease-in-out .5s;
+ animation-name: main_card;
+ animation-duration: 1.4s;
+}
+.main_card:hover{
+    filter: brightness(105%);
+    filter: contrast(110%);
+}
+.top-left{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    top: 32%;
+    font-size: 65px;
+    transform: translateX(-50px);
+}
+.btn{
+    width: 120px;
+    height: 40px;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 12px;
+    margin-top: 60%;
+    background-color: rgba(0, 0, 128, 0);
+    color: white;
+    border: 1px solid;
+    border-radius: 12px;
+    transform: translateX(-40px);
+    transition: ease-in-out .3s;
+    
+}
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transform: translateX(-30px);
+    background-color: rgba(255, 255, 255, 0.818);
+    color: rgb(56, 56, 56);
+    font-weight: bolder;
+    border: 1px solid;
+}
+
+.about{
+    background-color: #FFF6EC;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about h1{
+    padding-top: 100px;
+    color: #6F1C11;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.rotating{
+    position: absolute;
+   right: 0;
+   top: 1;
+   width: 400px;
+   margin-right: 20px;
+    animation-name: rotating;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    scale: 0.75;
+    z-index: 1;
+ 
+}
+
+@keyframes rotating{
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+ }
+
+
+.about p{
+    color: #333333;
+    font-size: 21px;
+    max-width: 500px;
+}
+.about img{
+    z-index: 2;
+}
+
+.steak{
+color: #6F1C11;
+position:relative;
+font-size: 17px;
+font-weight: bold;
+margin-top: 200px;
+margin-right: 100px;
+
+
+
+}
+
+@keyframes main_card{
+ from{opacity: 0%; transform: translateY(-10px);}
+ to{opacity: 100%; transform: translateY(-50px);}
+}
+
+
+/* ---------------------------- */
+.menu{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFF6EC;
+    padding-top: 200px;
+}
+.menu h1{
+    text-transform: uppercase;
+    color: #6F1C11;
+    font-size: 35px;
+
+}
+.steak_img{
+z-index: 1;
+margin-top: 20px;
+transition: ease .4s;
+}
+.steak_img:hover{
+    transform: scale(1.06);
+}
+.menu h3{
+    color: #333333;
+  
+}
+.steak_logo{
+    transform: translateX(-490px);
+    
+    z-index: 3;
+}
+.menu p{
+    margin-top: 5px ;
+    color: #333333;
+    font-size: 16px;
+}
+.explore_btn{
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    color: #6F1C11;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: rgba(255, 222, 173, 0);
+    border: 0.5px solid #6F1C11;
+    transition: ease .5s;
+}
+.explore_btn:hover{
+    background-color: #6F1C11;
+    color: white;
+    transform: scale(1.1);
+
+}
+
+.wine{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFF6EC;
+    padding-top: 30px;
+}
+.wine h3{
+    color: #333333;
+    
+}
+.wine p{
+    margin-top: 5px ;
+    color: #333333;
+    font-size: 16px;
+}
+.wine_img{
+    z-index: 1;
+    margin-top: 30px;
+    transition: ease .4s;
+}
+.wine_img:hover{
+    transform: scale(1.06);
+}
+.wine_icon{
+    transform: translateX(200px);
+    
+
+
+}
+.wine_content{
+    margin-top: 100px;
+    translate: 150px;
+}
+.restaurant_video{
+    background-color: #FFF6EC;
+    padding-top: 135px;
+}
+
+.tour{
+    background-color: #FFF6EC;
+    height: 100vh;
+    margin: 0;
+}
+
+.restaurant_video h2{
+    color: #6F1C11;
+    margin: 0;
+
+}
+.tour__head{
+    padding-top: 10vh;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.image-container{
+    height: 27.190rem;
+
+    position: relative;
+    width: 78%;
+    display: block;
+    margin: 0 auto;
+   margin-left: 12%; 
+    overflow: hidden;
+    
+  border: 2px solid #ebb47a;
+  border-radius: 10px;
+}
+
+canvas{
+    width: 100%;
+}
+
+/* https://as1.ftcdn.net/v2/jpg/05/00/70/18/1000_F_500701830_D6ThxRObOXtsfoC9GUE2rwv6w7OOlrGC.jpg */
