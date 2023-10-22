@@ -13,7 +13,7 @@
     <section class="home" >
         
         <header class="header">
-        <img  src="img/logo-w.png" alt="" >  
+        <img  src="img/logo-w.png" alt="" > 
         <nav>
         <ul class="ul">
         <li>About</li> 
@@ -27,7 +27,7 @@
         <div class="card"></div>
         
         <div class="main_card"> <div class="top-left">GRILLED <br> STEAK </div><br>
-    <button class="btn">Book a table</button></div> 
+    <a href="#link_book"><button class="btn">Book a table</button></a></div> 
        
         <div class="card" id="card_2"></div>
     </div>
@@ -76,7 +76,56 @@
             </div>
         </div>
     </section>
+
+    <section class = "banner">
+        <h2 id="link_book">BOOK YOUR TABLE NOW</h2>
+        <div class = "card-container">
+            <div class = "card-img">
+                <!-- image here -->
+            </div>
+
+            <div class = "card-content">
+                <h3>Reservation</h3>
+                <form>
+                    <div class = "form-row">
+                        <select name = "days">
+                            <option value = "day-select">Select Day</option>
+                            <option value = "sunday">Sunday</option>
+                            <option value = "monday">Monday</option>
+                            <option value = "tuesday">Tuesday</option>
+                            <option value = "wednesday">Wednesday</option>
+                            <option value = "thursday">Thursday</option>
+                            <option value = "friday">Friday</option>
+                            <option value = "saturday">Saturday</option>
+                        </select>
+
+                        <select name = "hours">
+                            <option value = "hour-select">Select Hour</option>
+                            <option value = "10">10: 00</option>
+                            <option value = "10">12: 00</option>
+                            <option value = "10">14: 00</option>
+                            <option value = "10">16: 00</option>
+                            <option value = "10">18: 00</option>
+                            <option value = "10">20: 00</option>
+                            <option value = "10">22: 00</option>
+                        </select>
+                    </div>
+
+                    <div class = "form-row">
+                        <input type = "text" placeholder="Full Name">
+                        <input type = "text" placeholder="Phone Number">
+                    </div>
+
+                    <div class = "form-row">
+                        <input type = "number" placeholder="How Many Persons?" min = "1">
+                        <input type = "submit" value = "BOOK TABLE">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </body> 
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
 <script src="panolens.min.js"></script>

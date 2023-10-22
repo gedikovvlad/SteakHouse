@@ -11,3 +11,5 @@ const viewer = new PANOLENS.Viewer({
 });
 viewer.add( panorama );
 container.append(img)
+
+
