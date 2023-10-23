@@ -266,12 +266,12 @@ transition: ease .4s;
 }
 .restaurant_video{
     background-color: #FFF6EC;
-    padding-top: 135px;
+    padding-top: 105px;
 }
 
 .tour{
     background-color: #FFF6EC;
-    height: 100vh;
+    height: 80vh;
     margin: 0;
 }
 
@@ -318,7 +318,7 @@ canvas{
 }
 .card-container{
     display: grid;
-    grid-template-columns: 420px 420px;
+    grid-template-columns: 520px 520px;
 }
 .card-img{
     background: url("img/card.jpg") center/cover no-repeat;
@@ -361,7 +361,7 @@ form input[type = text], form input[type = number], form input::placeholder, sel
 }
 form input[type = submit]{
     color: #fff;
-    background: #f2745f;
+    background: #6F1C11;
     padding: 12px 0;
     border-radius: 4px;
     cursor: pointer;
@@ -369,3 +369,15 @@ form input[type = submit]{
 form input[type = submit]:hover{
     opacity: 0.9;
 }
+
+
+.date_class{
+    color: #9a9a9a ;
+}
+
+
+
+
+
+
+/* ---------------- */
