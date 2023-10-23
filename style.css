@@ -43,7 +43,10 @@
 
 
 }
-
+.ul a{
+    color: white;
+    text-decoration: none;
+}
 .cards{
     display: flex;
     justify-content: space-between;
@@ -65,7 +68,7 @@ background-image: url("img/grilled-ribeye-beef-steak\ 1.png");
 }
 .main_card{
     margin-top: 0px;
-    width:650px;
+    width:700px;
     height: 750px;
     background-image: url("img/Mask\ group\ \(2\).png");
     border-radius: 25px;
@@ -287,7 +290,7 @@ transition: ease .4s;
 }
 
 .image-container{
-    height: 29.190rem;
+    height: 32.190rem;
 
     position: relative;
     width: 78%;
@@ -307,14 +310,15 @@ canvas{
 
 /* https://as1.ftcdn.net/v2/jpg/05/00/70/18/1000_F_500701830_D6ThxRObOXtsfoC9GUE2rwv6w7OOlrGC.jpg */
 .banner{
-    min-height: 100vh;
+    padding-top: 100px;
+    min-height: 70vh;
     background: linear-gradient(#FFF6EC, #FFF6EC), url("banner-img.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #fff;
-    padding-bottom: 20px;
+
 }
 .card-container{
     display: grid;
