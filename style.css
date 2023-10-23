@@ -359,15 +359,17 @@ form select, form input{
 form input[type = text], form input[type = number], form input::placeholder, select{
     color: #9a9a9a;
 }
-form input[type = submit]{
+form input[type = reset]{
     color: #fff;
     background: #6F1C11;
     padding: 12px 0;
     border-radius: 4px;
     cursor: pointer;
+    transition: ease .3s;
 }
-form input[type = submit]:hover{
+form input[type = reset]:hover{
     opacity: 0.9;
+
 }
 
 
