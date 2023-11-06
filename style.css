@@ -156,7 +156,7 @@ background-image: url("img/grilled-ribeye-beef-steak\ 1.png");
 
 .about p{
     color: #333333;
-    font-size: 21px;
+    font-size: 20px;
     max-width: 500px;
 }
 .about img{
@@ -275,7 +275,6 @@ transition: ease .4s;
 
 .tour{
     background-color: #FFF6EC;
-    height: 80vh;
     margin: 0;
 }
 
@@ -292,7 +291,7 @@ transition: ease .4s;
 
 .image-container{
     height: 32.190rem;
-
+cursor:grab;
     position: relative;
     width: 78%;
     display: block;
@@ -311,8 +310,7 @@ canvas{
 
 /* https://as1.ftcdn.net/v2/jpg/05/00/70/18/1000_F_500701830_D6ThxRObOXtsfoC9GUE2rwv6w7OOlrGC.jpg */
 .banner{
-    padding-top: 100px;
-    min-height: 70vh;
+    padding-top: 150px;
     background: linear-gradient(#FFF6EC, #FFF6EC), url("banner-img.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -323,10 +321,15 @@ canvas{
 }
 .card-container{
     display: grid;
-    grid-template-columns: 520px 520px;
+    grid-template-columns: 550px 550px;
 }
 .card-img{
     background: url("img/card.jpg") center/cover no-repeat;
+    transition: ease-in-out .4s;
+}
+.card-img:hover{
+ 
+    border-radius: 25px;
 }
 .banner h2{
     padding-bottom: 40px;
@@ -334,8 +337,12 @@ canvas{
     margin-bottom: 20px;
 }
 .card-content{
-    background: #fff;
-    height: 330px;
+    background: #ffffff;
+    height: 370px;
+    transition: ease-in-out .4s;
+}
+.card-content:hover{
+    border-radius: 25px;
 }
 .card-content h3{
     text-align: center;
@@ -388,3 +395,11 @@ form input[type = reset]:hover{
 
 
 /* ---------------- */
+.our_team{
+    background-color: #FFF6EC;
+    padding-top: 130px;
+}
+.our_team h1{
+    color: #6F1C11;
+    font-size: 40px;
+}
