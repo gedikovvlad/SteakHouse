@@ -69,7 +69,7 @@ background-image: url("img/grilled-ribeye-beef-steak\ 1.png");
 }
 .main_card{
     margin-top: 0px;
-    width:700px;
+    width:720px;
     height: 750px;
     background-image: url("img/Mask\ group\ \(2\).png");
     border-radius: 25px;
@@ -322,15 +322,17 @@ canvas{
 .card-container{
     display: grid;
     grid-template-columns: 550px 550px;
+    transition: ease-in-out .7s;
+}
+.card-container:hover{
+   
+    grid-template-columns: 400px 700px;
 }
 .card-img{
     background: url("img/card.jpg") center/cover no-repeat;
     transition: ease-in-out .4s;
 }
-.card-img:hover{
- 
-    border-radius: 25px;
-}
+
 .banner h2{
     padding-bottom: 40px;
     color: #6F1C11;
@@ -341,9 +343,7 @@ canvas{
     height: 370px;
     transition: ease-in-out .4s;
 }
-.card-content:hover{
-    border-radius: 25px;
-}
+
 .card-content h3{
     text-align: center;
     color: #000;
@@ -399,7 +399,7 @@ form input[type = reset]:hover{
     background-color: #FFF6EC;
     padding-top: 130px;
 }
-.our_team h1{
+.our_team h2{
     color: #6F1C11;
-    font-size: 40px;
+    text-transform: uppercase;
 }
